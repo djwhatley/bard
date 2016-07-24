@@ -1,0 +1,23 @@
+<template name="Core_navbar">
+    
+    <div class="ui top attached menu">
+        {{#each menuItems}}
+            <a class="{{activeClass}} item" href="{{href}}">{{text}}</a>   
+        {{/each}}
+        
+        <div class="ui right dropdown icon item">
+            <i class="sidebar icon"></i>
+            <div class="menu">
+                <div class="item">
+                    Settings
+                </div>
+                <div class="divider"></div> 
+                <div class="item">
+                    More Settings
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</template>
